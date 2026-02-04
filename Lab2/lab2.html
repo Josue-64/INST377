@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Lab2 Color Form</title>
+    <style>
+      body {
+        background-color: moccasin;
+      }
+
+      .question_and_input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+        margin-bottom: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 50;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="question_and_input">
+      <h1>What is Your Favortie Color?</h1>
+      <form name="colorForm" method="get" action="lab2_confirmation.html">
+        <label for="colorName"> Favorite Color: </label>
+        <input type="text" id="colorName" required />
+        <br />
+        <br />
+
+        <div class="button">
+          <input type="submit" value="Sumbit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
