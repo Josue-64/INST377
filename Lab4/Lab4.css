@@ -1,0 +1,43 @@
+body {
+  background-color: aqua;
+}
+
+#name_and_change_color {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 100px;
+  gap: 200px;
+}
+
+#color_form {
+  display: flex;
+  margin-left: 100px;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+}
+
+#color_change_button {
+  width: 100px;
+}
+
+#text_add_and_test {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 100px;
+  gap: 200px;
+}
+
+#text_tester_form {
+  display: flex;
+  margin-left: 100px;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+}
+
+#add_text_button {
+  width: 100px;
+}
