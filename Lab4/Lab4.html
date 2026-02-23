@@ -6,24 +6,67 @@
         <link rel="stylesheet" href="Lab4.css">
     </head>
     <body>
+        <h1 id="heading">INST377 - Lab 4</h1>
         <div id="name_and_change_color">
-            <form id="color_form">
-                <label for="name_input">Name:</label>
-                <input type="text" id="name_input">
-                <button type="button" id="alert_button">Alert Me!</button>
+            <form id="color_form" onsubmit="return alertMe()">
+                <label for="name_input" name="name_input">Name:</label>
+                <input type="text" id="name_input" required>
+                <button type="submit" id="alert_button">Alert Me!</button>
             </form>
-            <button type="button" id="color_change_button">Change Color</button>
+            <div class="button_wrap">
+                <button onclick="changeColor()" type="button" id="color_change_button">Change Color</button>
+            </div>
         </div>
 
         <div id="text_add_and_test">
-            <form id="text_tester_form">
+            <form id="text_tester_form" name="text_tester_form" onsubmit="return validateText()">
                 <label for="color_input">Text Tester:</label>
                 <input type="text" id="color_input">
-                <button type="button" id="validate">Validate Text</button>
+                <button type="submit" id="validate">Validate Text</button>
             </form>
             
-            <button type="button" id="add_text_button">Add Text</button>
+            <div class="button_wrap">
+                <button type="button" id="add_text_button" onclick="addText()">Add Text</button>
+            </div>
         </div>
     
+
+
+
+        <script type="text/javascript">
+            function changeColor() {
+                if(document.body.style.backgroundColor == "green") {
+                    document.body.style.backgroundColor = "aqua";
+                } else {
+                    document.body.style.backgroundColor = "green";
+                }
+            }
+
+            function validateText() {
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                if (validation.test(document.text_tester_form.color_input.value.trim())) {
+                    document.body.style.backgroundColor = "red";
+                    alert("Invalid Text");
+                    return false;
+                }
+            }
+
+            function alertMe() {
+                var name = document.getElementById("name_input").value.trim();
+                alert("Hi " + name + "!");
+            }
+
+            function addText() {
+                var text = document.getElementById("color_input").value.trim();
+                document.getElementById("heading").textContent += text;
+
+            }
+
+            
+
+            
+
+        </script>
+
     </body>
 </html>

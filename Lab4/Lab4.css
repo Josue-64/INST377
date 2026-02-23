@@ -1,29 +1,31 @@
 body {
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  
   
 }
 
 #name_and_change_color {
   display: flex;
+  justify-content: center;  
   align-items: center;
-  margin-top: 200px;
-  margin-left: 250px;
-  gap: 200px;
+  gap: 120px;               
+  margin-bottom: 80px;
+  width: 100%;
 }
 
 #color_form {
-  color: white;
+ color: white;
   display: flex;
-  margin-left: 100px;
-  width: auto;
   align-items: center;
   gap: 10px;
   border: 5px solid white;
   border-radius: 15px;
   background-color: purple;
-  padding : 20px;
+  padding: 20px;
 }
 
 #color_change_button {
@@ -32,33 +34,37 @@ body {
 
 #text_add_and_test {
   display: flex;
+  justify-content: center;  
   align-items: center;
-  margin-top: 200px;
-  margin-left: 250px;
-  gap: 150px;
-
-  
+  gap: 120px;               
+  margin-bottom: 80px;
+  width: 100%;
 }
 
 #text_tester_form {
   color: white;
   display: flex;
-  margin-left: 100px;
-  width: auto;
   align-items: center;
   gap: 10px;
   border: 5px solid white;
   border-radius: 15px;
   background-color: purple;
-  padding : 20px;
+  padding: 20px;
 }
 
 #add_text_button {
-  width: 100px;
+   width: 100px;
+  
+}
+
+.button_wrap {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   border: 5px solid white;
   border-radius: 15px;
   background-color: purple;
-  padding : 20px;
-  
+  padding: 20px;
 }
 
