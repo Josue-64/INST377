@@ -1,0 +1,44 @@
+.header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.navigation {
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation li {
+  display: inline-block;
+}
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+.navigation li:hover {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+.main_content {
+  background-color: aqua;
+}
+
+.sub_content {
+  background-color: aqua;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 15px;
+  display: inline-block;
+}
+
+.sub_sub_content {
+  width: 1000px; /* remember to change to 60% */
+  background-color: white;
+  gap: 100px;
+}
