@@ -1,0 +1,48 @@
+body {
+  background-color: pink;
+}
+
+.header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.navigation {
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navigation li:hover {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+.main_content {
+  padding: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+#footer {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+}
