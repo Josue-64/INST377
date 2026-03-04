@@ -1,5 +1,5 @@
 body {
-  background-color: aqua;
+  background-color: pink;
 }
 
 .header {
@@ -32,43 +32,30 @@ body {
 }
 
 .main_content {
-  flex-wrap: wrap;
-  align-items: flex-start;
   padding: 10px;
+}
+
+.choices {
+  display: flex;
   gap: 10px;
- 
-}
-
-.sub_content {
-  background-color: aqua;
-  border: 2px solid black;
   margin: 10px;
-  padding: 15px;
-  display: inline-block;
-  width: 60%;
-  
 }
 
-.sub_sub_content {
+.choices h1 {
   background-color: white;
-  gap: 100px;
-}
-
-#contact_info {
-  float: right;
-  text-align: center;
-  background-color: green;
   border: 2px solid black;
-  border-radius: 15px;
-  width: 25%;
-  padding: 10px;
-  margin: 10px;
-}
-
-button:hover {
-  background-color: red;
+  padding: 15px;
+  width: 50%;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
+}
+
+#footer {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 10px;
 }
