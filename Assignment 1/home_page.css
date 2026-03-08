@@ -72,3 +72,10 @@ button:hover {
 ul {
   list-style-type: none;
 }
+
+#footer {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+}

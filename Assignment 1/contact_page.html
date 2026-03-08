@@ -3,6 +3,7 @@
   <head>
     <title>Contact Page</title>
     <link rel="stylesheet" href="contact_page.css" />
+    <script src="contact_page.js" defer></script>
   </head>
 
   <body>
@@ -22,23 +23,21 @@
       </ul>
     </nav>
     <div class="main_content">
-        <h2>Reach out if you have any questions</h2>
-
+    <h2>Reach out if you have any questions</h2>
+    <form onsubmit="validateForm(); return false;">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" placeholder="Your name"><br><br>
 
         <label for="date">Date:</label><br>
         <input type="date" id="date" name="date"><br><br>
 
-        <label for="concern">Concern:</label><br>
-        <textarea id="concern" name="concern"></textarea> <br><br>
-        <input type="submit" value="Submit" onclick="window.location.href='success_page.html'">
+        <label for="textbox">Concern:</label><br>
+        <textarea id="textbox" name="textbox"></textarea><br><br>
 
-        <h3 id="footer">Copyright</h3>
-        
-
-
-    </div>
+        <input type="submit" value="Submit">
+    </form>
+    <h3 id="footer">Copyright</h3>
+</div>
       
   </body>
 </html>
