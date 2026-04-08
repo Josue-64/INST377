@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+.header .column {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0; 
+}
