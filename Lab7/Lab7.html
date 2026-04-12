@@ -9,13 +9,14 @@
     <h1>Lab7</h1>
 
     <h2>Please Enter Book Name:</h2> 
-    
+    <form onsubmit="searchBook(); return false;">
     <input type="text" id="search">
-    <button onclick="searchBook()" id="search_button">Search</button>
+    <button type="submit" id="search_button">Search</button>
     <br><br>
+    </form>
     
     
-    <div class="row header">
+    <div id="row_header" style="display:none;">
         <div class="column">
             <p>Title</p>
         </div>
@@ -24,6 +25,7 @@
         </div>
     </div>
 
+    <p id="loading" style="display:none;">Please wait while this loads...</p>
     
     <div class="row">
         <div class="column">

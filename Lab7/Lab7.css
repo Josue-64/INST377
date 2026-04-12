@@ -8,13 +8,21 @@
     text-align: left;
 }
 
-.header .column {
+#row_header .column {
     text-align: center;
     font-weight: bold;
+}
+
+#row_header {
+    font-size: 30px;
 }
 
 
 ul {
     list-style-type: none;
     padding-left: 0; 
+}
+
+#loading {
+    font-size: 50px;
 }
