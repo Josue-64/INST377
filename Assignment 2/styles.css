@@ -1,0 +1,28 @@
+body {
+    background-color:bisque;
+}
+
+#navBar ul {
+    background-color:coral;
+    list-style-type:none;
+    padding: 10px;
+    display: flex;       
+    gap: 40px; 
+    justify-content: center;
+}
+
+#navBar a {
+    text-decoration: none;   
+    color: black;
+    font-weight: bold;
+}
+
+#navBar a:hover {
+    background-color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
