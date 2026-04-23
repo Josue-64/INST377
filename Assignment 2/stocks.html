@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Stocks</title>
+</head>
+<body>
+    <!-- Page Title -->
+    <div class="title">    
+        <h1>INST377 - Actvities</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="navBar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </div>
+
+    <!-- Stocks Section Title -->
+    <div class="title">
+        <h1>Stocks</h1>
+    </div>
+
+    <!-- Stock Search Input -->
+    <div class="stock_search">
+        <input type="text" id="stockName" placeholder="Enter stock">
+        <select id="timeRange">
+            <option value="" hidden>Time Range</option>
+            <option value="30days">30 Days</option>
+            <option value="60days">60 Days</option>
+            <option value="90days">90 Days</option>
+        </select>
+        <button id="fetchStock" onclick="getStock()">Search</button>
+    </div>
+
+    <!-- Chart Display -->
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart Setup -->
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- Voice Command Box -->
+    <div id="audioBox">
+        <h3>Voice Commands</h3>
+        <ul>
+            <li>To use voice features: Say...</li>
+            <li>"Navigate to [page]" (Navigates to Home, Stocks, or Dogs)</li>
+            <li>"Change color to [color]" (Changes background color)</li>
+            <li>"Hello" (Says hello back to you)</li>
+        </ul>
+        <!-- Audio Control Buttons -->
+        <div class="buttonBox">
+            <button id="audio_on">Turn On Audio</button>
+            <button id="audio_off">Turn Off Audio</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
