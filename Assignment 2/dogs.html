@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <title>Dogs</title>
+</head>
+<body>
+    <!-- Page Title -->
+    <div class="title">    
+        <h1>INST377 - Actvities</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="navBar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </div>
+
+    <!-- Dogs Section Title -->
+    <div class="title">
+        <h1>Dogs</h1>
+    </div>
+
+    <!-- Swiper Carousel -->
+    <div class="swiper">
+        <div class="swiper-wrapper" id="dogImages">
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Dog Breed Buttons -->
+    <div class="title">
+        <h2>Dog Breeds</h2>
+    </div>
+    <div id="breedButtons">
+    </div>
+
+    <!-- Breed Info Container (hidden until button clicked) -->
+    <div id="breedInfo" style="display:none;">
+        <h2 id="breedName"></h2>
+        <p id="breedDescription"></p>
+        <p id="breedMinLife"></p>
+        <p id="breedMaxLife"></p>
+    </div>
+
+    <!-- Voice Command Box -->
+    <div id="audioBox">
+        <h3>Voice Commands</h3>
+        <ul>
+            <li>To use voice features: Say...</li>
+            <li>"Navigate to [page]" (Navigates to Home, Stocks, or Dogs)</li>
+            <li>"Change color to [color]" (Changes background color)</li>
+            <li>"Hello" (Says hello back to you)</li>
+            <li>"Load Dog Breed [breed name]" (Shows breed info)</li>
+        </ul>
+        <div class="buttonBox">
+            <button id="audio_on">Turn On Audio</button>
+            <button id="audio_off">Turn Off Audio</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

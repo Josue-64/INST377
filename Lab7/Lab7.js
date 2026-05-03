@@ -10,7 +10,8 @@ async function searchBook() {
    
     document.getElementById("loading").style.display = "block";
 
-    const resultJson = await fetch(`https://openlibrary.org/search.json?title=${bookName}`).then((result) => result.json()); 
+    const resultJson = await fetch(`https://openlibrary.org/search.json?title=${bookName}`)
+    .then((result) => result.json()); 
 
 
     resultJson.docs.forEach((book) => {
